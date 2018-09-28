@@ -7,9 +7,14 @@ Multichannel display from Thingspeak.com using Highcharts.com.
  
  Displays multiple channels of data and fields, using Highchart.com, from a thingspeak.com channels.
  
- Can use the bottom chart cursor to zoom along, and auto ranges.
- Can use the top left buttons to select range of data.
- Can use the top right 3 bars to download data
+ Features:
+ - cursor click (vertical rectangle, kind of) on chart to zoom y-axis
+ - top left buttons to select range of data, or use timeline below chart
+ - top right 3 bars ("burger menu") to download data as picture/pdf/csv/xls
+ - hide/show all or certain traces
+ - auto-load new data (if righthand-side of graph set to last values and checkbox checked)
+ - load single/all channels from thingspeak which are connected
  
- The data is aliased (averaged?) in some capacity when it is too dense to display.
+ The data will be averaged if it's too dense to display after a certain zoom-out level,
+ gaps in data are always connected by a straight line.
  
